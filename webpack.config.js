@@ -6,7 +6,8 @@ module.exports = {
     entry: "./src/script.tsx",
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "bundle.[contenthash].js"
+        filename: "bundle.[contenthash].js",
+        publicPath: '/' 
     },
     module: {
         rules: [{
@@ -32,6 +33,7 @@ module.exports = {
         template: "./src/index.html"
     })],
     devServer: {
-        open: true
+        open: true,
+        historyApiFallback: true,
     }
 }

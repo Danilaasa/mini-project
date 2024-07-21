@@ -10,16 +10,15 @@ body {
 .container {
     max-width: 1035px;
     margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    
 }
 header {
     margin-bottom: 80px;
 }
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
-    gap: 60px;
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+    gap: 30px;
 }
 .navigation {
     display: flex;
@@ -45,6 +44,7 @@ header {
     border-radius: 8px;
     border: none;
     outline: none;
+    margin-right: 10px;
     
 }
 .navigation-search-search-button {
@@ -60,10 +60,16 @@ header {
     border: none;
     cursor: pointer;
     text-transform: uppercase;
+    text-decoration: none;
 }
 .card {
     display: flex;
     
+}
+.card-image {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
 }
 .card-info {
     padding: 9px 0px 9px 10px;
@@ -151,6 +157,7 @@ header {
     font-weight: 400;
     line-height: 21.1px;
     text-align: left;
+    color: white;
 
 }
 .usercard-info__text {
@@ -208,6 +215,22 @@ header {
     font-size: 13px;
     font-weight: 400;
     line-height: 17.15px;
+    text-align: left;
+    color: #E5E5E5;
+
+}
+.navigation-text-span {
+    text-transform: lowercase;
+}
+.LinkNav {
+    text-decoration: none;
+    color: #FF5533;
+}
+.ifNotSearch {
+    font-family: Rubik;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47.4px;
     text-align: left;
     color: #E5E5E5;
 
